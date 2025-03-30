@@ -2,6 +2,7 @@ import React from 'react';
 import { Scene } from './components/Scene';
 import { GameHUD } from './components/ui/GameHUD';
 import { LandingPage } from './components/ui/LandingPage';
+import AvatarCustomizer from './components/Avatar/AvatarCustomizer';
 import { useGameStore } from './store/gameStore';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
   return isPlaying ? (
     <div className="relative w-full h-screen">
+      <AvatarCustomizer />
       <Scene />
       <GameHUD />
     </div>
